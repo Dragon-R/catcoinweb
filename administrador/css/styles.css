@@ -1,0 +1,99 @@
+head, body {
+    background-color: #171717;
+    font-family: 'Play', arial;
+    font-weight: 700;
+}
+
+div#cabecera {
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: #202020;
+    border-top: 1px solid #2FF6BF;
+    border-right: 1px solid #2FF6BF;
+    border-bottom: 1px solid #2FF6BF;
+    border-left: 1px solid #2FF6BF;
+}
+
+div#index {
+    padding: 3em 11em;
+    font-family: 'Comic Sans MS', arial;
+}
+
+div#pie {
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: #202020;
+    border-top: 1px solid #D29BFD;
+    border-right: 1px solid #D29BFD;
+    border-bottom: 1px solid #D29BFD;
+    border-left: 1px solid #D29BFD;
+}
+
+div#video {
+    background-color: #858585;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+div#texto {
+    color: #7192FF;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+
+div#div_jugar, div#btn_jugar {
+    text-align: center;
+}
+
+button#button_jugar, input#btnregistrar {
+    color: #7192FF;
+    background-color: #00063B;
+    border-color: #000F97;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 2em 2em .5em;
+    padding: .5em 2em;
+    box-shadow: 4px 4px 2px #000426;
+}
+
+input#btnregistrar {
+    font-size: 1em;
+}
+
+font#btnjugar, a#inicio, a#jugar, a#nosotros, a#registro, a#sesion {
+    color: #2FF6BF;
+}
+
+font#btnjugar {
+    text-shadow: 0 3px 4px #0088AB;
+}
+
+font#btncatcoin, a#terminos, a#contacto {
+    color: #C35BFF;
+}
+
+font#btncatcoin {
+    text-shadow: 0 3px 4px #8700FF;
+}
+
+form#registro {
+    font-size: 1.5em;
+    color: #7192FF;
+}
+
+div#nosotros, div#usuarios, div#jugar {
+    color: #7192FF;
+    font-family: 'Comic Sans MS', arial;
+    font-size: 1.5em;
+}
+
+table#tab_usuarios {
+    color: #7192FF;
+    text-align: center;
+}

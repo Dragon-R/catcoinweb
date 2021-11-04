@@ -12,7 +12,7 @@
             Pasa obstáculos, roba monedas de los otros participantes, llega a la sima sin caer al precipicio.
             </div>
             <div id="div_jugar" class="col">
-                <button id="button_jugar" type="button" class="btn btn-lg"><font id="btnjugar">JUGAR</font> <font id="btncatcoin">CatCoin</font></button>
+                <a href="./CatCoinGame/CatCoin.html"><button id="button_jugar" type="button" class="btn btn-lg"><font id="btnjugar">JUGAR</font> <font id="btncatcoin">CatCoin</font></button></a>
             </div>
         </div>
     </div>

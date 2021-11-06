@@ -58,7 +58,7 @@ if ($accion) {
                     <div class="col-6">
                         <select class="form-select" name="txtGenero" id="txtGenero" value="<?php echo $txtGenero; ?>" aria-label="Default select example" required>
                             <option selected>Masculino</option>
-                            <option value="2">Femenino</option>
+                            <option>Femenino</option>
                         </select>
                     </div>
                     <div class="col-6">

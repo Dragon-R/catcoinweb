@@ -20,12 +20,8 @@ if ($_POST) {
     </head>
     <body>
         <div class="container">
-            <div class="row">
-            <div class="col-md-4">
-                
-            </div>
+            <div class="row justify-content-md-center">
                 <div class="col-md-4">
-                <br><br><br>
                     <div class="card">
                         <div class="card-header">
                             Login

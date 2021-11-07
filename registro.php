@@ -31,6 +31,19 @@ if ($accion) {
 
 ?>
 
+<?php
+session_start();
+if ($_POST) {
+    if (($_POST['user']==$txtAlias) && ($_POST['contrasena']==$txtContrasena)) {
+        $_SESSION['user']="ok";
+        $_SESSION['userName']=$txtAlias;
+        header('Location:index.php');
+    }else{
+        $mensaje="Error: El usuario o contraseña son incorrectos";
+    }
+}
+?>
+
     <div id="index" class="container">
         <div class="row">
             <form id="registro" method="POST" enctype="multipart/form-data">

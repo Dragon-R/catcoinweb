@@ -102,7 +102,7 @@ CREATE PROCEDURE new_user
 	IN contrasena VARCHAR(255),
 	IN nacimiento DATE,
 	IN pais VARCHAR(30),
-	IN ciudad VARCHAR(30)
+	IN ciudad VARCHAR(30))
     BEGIN
     INSERT INTO lector (nombre, apellido, direccion) VALUES (nombre, apellido, direccion);
 	INSERT INTO usuarios (alias, nombres, apellidos, genero, correo, contrasena, nacimiento, pais, ciudad) VALUES (alias, nombres, apellidos, genero, correo, contrasena, nacimiento, pais, ciudad);

@@ -3,9 +3,9 @@
 <?php
 session_start();
 if ($_POST) {
-    if (($_POST['user']==$txtAlias) && ($_POST['contrasena']==$txtContrasena)) {
-        $_SESSION['user']="ok";
-        $_SESSION['userName']=$txtAlias;
+    if (($_POST['correo']==$txtCorreo) && ($_POST['contrasena']==$txtContrasena)) {
+        $_SESSION['correo']="ok";
+        $_SESSION['correo']=$txtCorreo;
         header('Location:index.php');
     }else{
         $mensaje="Error: El usuario o contraseña son incorrectos";
@@ -14,33 +14,29 @@ if ($_POST) {
 ?>
 
     <div id="sesion" class="container">
+        <br>
+        <br>
+        <br>
         <div class="row justify-content-md-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        Login
-                    </div>
-                    <div class="card-body">
-                        <?php if(isset($mensaje)) { ?>
-                        <div class="alert alert-danger" role="alert">
-                            <?php echo $mensaje; ?>
-                        </div>
-                        <?php } ?>
-                        <form method="POST">
-                            <div class = "form-group">
-                                <label>Usuario</label>
-                                <input type="text" class="form-control" name="usuario" placeholder="Escribe tu usuario">
-                            </div>
-                            <div class="form-group">
-                                <label>Contraseña:</label>
-                                <input type="password" class="form-control" name="contrasenia" placeholder="Escribe tu contraseña">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Entrar al administrador</button>
-                        </form>
+            <form id="sesiones" method="POST" enctype="multipart/form-data">
+                <div id="sesion_correo" class="row align-items-center">
+                    <div class="col-4">
+                        <input type="email" class="form-control" name="txtCorreo" id="txtCorreo" value="" placeholder="Correo" minlength="5" maxlength="50" required>
                     </div>
                 </div>
-            </div>
+                <div id="sesion_contrasena" class="row align-items-center">
+                    <div class="col-4">
+                        <input type="password" id="password" class="form-control" name="txtContrasena" id="txtContrasena" value="" aria-describedby="passwordHelpInline" placeholder="Contraseña" minlength="8" maxlength="16" required>
+                    </div>
+                </div>
+                <div id="btn_jugar" class="col">
+                    <input id="btnregistrar" type="submit" class="btn btn-lg" name="accion" value="INICIAR SESIÓN">
+                </div>
+            </form>
         </div>
+        <br>
+        <br>
+        <br>
     </div>
 
 <?php include("template/pie.php"); ?>

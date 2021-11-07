@@ -4,7 +4,7 @@ head, body {
     font-weight: 700;
 }
 
-div#cabecera {
+div#cabecera, div#card-header {
     padding-left: 4em;
     padding-right: 4em;
     background-color: #202020;
@@ -19,7 +19,7 @@ div#index {
     font-family: 'Comic Sans MS', arial;
 }
 
-div#pie {
+div#pie, div#card_body {
     padding-left: 4em;
     padding-right: 4em;
     background-color: #202020;
@@ -96,4 +96,9 @@ div#nosotros, div#usuarios, div#jugar, div#sesion {
 table#tab_usuarios {
     color: #7192FF;
     text-align: center;
+}
+
+div#sesion_correo, div#sesion_contrasena {
+    justify-content: center;
+    padding: 0.5em;
 }

@@ -1,14 +1,49 @@
 body {
-    background-color: #c8bee2;
+    background-color: #383838;
     font-family: 'Comic Sans MS', arial;
+    color: #fff;
 }
 
 nav#cabec {
     padding-left: 4em;
     padding-right: 4em;
-    background-color: #c8bee2;
+    background-color: #2d1c58;
     border-top: 1px solid #2FF6BF;
     border-right: 1px solid #2FF6BF;
     border-bottom: 1px solid #2FF6BF;
     border-left: 1px solid #2FF6BF;
+}
+
+div.container {
+    padding: 4em;
+}
+
+div.card-header {
+    background-color: #2d1c58;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #808080;
+}
+
+div.card-body {
+    background-color: #2d1c58;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+table.table {
+    color: #fff;
+    background-color: #2d1c58;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    border-left: 1px solid #808080;
 }

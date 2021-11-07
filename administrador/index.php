@@ -21,9 +21,6 @@ if ($_POST) {
     </head>
     <body>
         <div class="container">
-            <br>
-            <br>
-            <br>
             <div class="row justify-content-md-center">
                 <div class="col-md-4">
                     <div class="card">

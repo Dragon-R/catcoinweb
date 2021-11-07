@@ -33,5 +33,4 @@ if (!isset($_SESSION['usuario'])) {
             </div>
         </nav>
         <div id="texto" class="container">
-            <br>
             <div class="row">

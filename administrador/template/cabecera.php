@@ -19,18 +19,19 @@ if (!isset($_SESSION['usuario'])) {
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <?php $url="http://".$_SERVER['HTTP_HOST']."/catcoin" ?>
-        <nav class="navbar navbar-expand navbar-light bg-light">
+        <nav id="cabec" class="navbar navbar-expand navbar-dark bg-dark">
             <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#">Administrador del sitio web</a>
+                <a class="nav-item nav-link active" href="#">Administrador del sitio web</a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>/administrador/inicio.php">Inicio</a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>/administrador/seccion/usuarios.php">Usuarios</a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>/administrador/seccion/cerrar.php">Cerrar <?php echo $nombreUsuario; ?></a>
-                <a class="nav-item nav-link" href="<?php echo $url; ?>">Ver sitio web</a>
+                <a class="nav-item nav-link" href="<?php echo $url; ?>" target="_blank">Ver sitio web</a>
             </div>
         </nav>
-        <div class="container">
+        <div id="texto" class="container">
             <br>
             <div class="row">

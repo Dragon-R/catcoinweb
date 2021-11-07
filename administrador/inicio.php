@@ -1,4 +1,4 @@
-<?php include('template/cabecera.php'); ?>
+<?php include("template/cabecera.php"); ?>
 
                 <div class="col-md-12">
                     <div class="jumbotron">
@@ -7,9 +7,9 @@
                         <hr class="my-2">
                         <p>Mas informacion</p>
                         <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="seccion/productos.php" role="button">Administrar Usuarios</a>
+                            <a class="btn btn-dark btn-lg" href="seccion/usuarios.php" role="button">Administrar Usuarios</a>
                         </p>
                     </div>
                 </div>
 
-<?php include('template/pie.php'); ?>
+<?php include("template/pie.php"); ?>

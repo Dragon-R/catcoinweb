@@ -1,10 +1,10 @@
 <?php 
 /* session_start();
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['txtCorreo'])) {
     header("Location:../index.php");
 }else{
-    if($_SESSION['user']=="ok") {
-        $userName=$_SESSION["userName"];
+    if($_SESSION['txtCorreo']=="ok") {
+        $userName=$_SESSION["txtCorreo"];
     }
 } */
 ?>
@@ -42,7 +42,7 @@ if (!isset($_SESSION['user'])) {
                     <a id="sesion" class="nav-link" href="sesion.php">INICIAR SESIÓN</a>
                 </li>
                 <li class="nav-item">
-                    <!-- <a class="nav-item nav-link" href="<?php echo $url;?>cerrar.php">Cerrar <?php echo $userName; ?></a> -->
+                    <!-- <a class="nav-item nav-link" href="<?php echo $url;?>cerrar.php">Cerrar <?php echo $txtCorreo; ?></a> -->
                 </li>
             </ul>
         </nav>

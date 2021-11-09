@@ -80,7 +80,7 @@ $listaUsuarios=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-                <div class="col">
+                <div class="col col-3">
                     <div class="card">
                         <div class="card-header">
                             Datos de Usuario
@@ -122,6 +122,7 @@ $listaUsuarios=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                                     <label for="txtCiudad">Ciudad:</label>
                                     <input type="text" class="form-control" value="<?php echo $txtCiudad; ?>" name="txtCiudad" id="txtCiudad" placeholder="Ciudad de origen">
                                 </div>
+                                <br>
                                 <div class="btn-group" role="group" aria-label="">
                                     <button type="submit" name="accion" <?php echo ($accion=="Seleccionar")?"disabled":""; ?> value="Agregar" class="btn btn-success">Agregar</button>
                                     <button type="submit" name="accion" <?php echo ($accion!="Seleccionar")?"disabled":""; ?> value="Modificar" class="btn btn-warning">Modificar</button>

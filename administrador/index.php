@@ -42,6 +42,7 @@ if ($_POST) {
                                     <label>Contraseña:</label>
                                     <input type="password" class="form-control" name="contrasenia" placeholder="Escribe tu contraseña">
                                 </div>
+                                <br>
                                 <button type="submit" class="btn btn-primary">Entrar al administrador</button>
                             </form>
                         </div>

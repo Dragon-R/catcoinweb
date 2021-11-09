@@ -63,7 +63,7 @@ CREATE VIEW victorias_derrotas AS
     JOIN partidas
     ON crea_unen.id_partida = partidas.id_partida;
 
-/* opcional agragar al anterior */
+/* opcional agregar al anterior */
     WHERE crea_unen.vict_derr = 1;
 
 
@@ -91,7 +91,7 @@ CREATE VIEW ganancias AS
     GROUP BY usuarios.nombres;
 
 
-/* agragar usuarios */
+/* agregar usuarios */
 CREATE PROCEDURE new_user
 (
     IN alias VARCHAR(10),
@@ -107,3 +107,59 @@ CREATE PROCEDURE new_user
     INSERT INTO lector (nombre, apellido, direccion) VALUES (nombre, apellido, direccion);
 	INSERT INTO usuarios (alias, nombres, apellidos, genero, correo, contrasena, nacimiento, pais, ciudad) VALUES (alias, nombres, apellidos, genero, correo, contrasena, nacimiento, pais, ciudad);
     END//
+
+
+
+
+
+
+	/* consultas */
+
+/* usuarios y metodos de pago */
+SELECT usuarios.id_usuario, usuarios.nombres, usuarios.correo, tarjetas.nro_tarjeta, billeteras.nro_celular
+FROM usuarios
+INNER JOIN tarjetas
+ON usuarios.id_usuario = tarjetas.id_usuario
+JOIN billeteras
+ON usuarios.id_usuario = billeteras.id_usuario;
+
+
+
+/* usuarios con metodos  de pago y sin metodos de pago */
+SELECT usuarios.id_usuario, tarjetas.id_tarjeta
+FROM usuarios
+LEFT JOIN tarjetas
+ON usuarios.id_usuario = tarjetas.id_usuario;
+
+
+
+/* Victorias y derrotas en partidas y monto ganado por usuario */
+SELECT usuarios.alias, crea_unen.vict_derr, partidas.cantidad, partidas.monto, partidas.cantidad * partidas.monto AS ganancia
+	FROM usuarios
+	JOIN crea_unen
+    ON usuarios.id_usuario = crea_unen.id_usuario
+    JOIN partidas
+    ON crea_unen.id_partida = partidas.id_partida;
+
+
+
+/* Ganadores de partidas y monto ganado por usuario */
+SELECT usuarios.alias, crea_unen.vict_derr, partidas.cantidad, partidas.monto, partidas.cantidad * partidas.monto AS ganancia
+	FROM usuarios
+	JOIN crea_unen
+    ON usuarios.id_usuario = crea_unen.id_usuario
+    JOIN partidas
+    ON crea_unen.id_partida = partidas.id_partida
+    WHERE crea_unen.vict_derr = 1;
+
+
+
+/* Ganancias totales por usuario */
+SELECT usuarios.nombres, usuarios.apellidos, crea_unen.vict_derr, partidas.monto, SUM(partidas.cantidad * partidas.monto) AS ganancia
+	FROM usuarios
+	JOIN crea_unen
+    ON usuarios.id_usuario = crea_unen.id_usuario
+    JOIN partidas
+    ON crea_unen.id_partida = partidas.id_partida
+    WHERE crea_unen.vict_derr = 1
+    GROUP BY usuarios.nombres;

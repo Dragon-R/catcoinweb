@@ -3,9 +3,9 @@
 <?php
 session_start();
 if ($_POST) {
-    if (($_POST['correo']==$txtCorreo) && ($_POST['contrasena']==$txtContrasena)) {
-        $_SESSION['correo']="ok";
-        $_SESSION['correo']=$txtCorreo;
+    if (($_POST['txtCorreo']==$txtCorreo) && ($_POST['txtContrasena']==$txtContrasena)) {
+        $_SESSION['txtCorreo']="ok";
+        $_SESSION['txtCorreo']=$txtCorreo;
         header('Location:index.php');
     }else{
         $mensaje="Error: El usuario o contraseña son incorrectos";

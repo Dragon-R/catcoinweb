@@ -7,19 +7,19 @@ body {
 nav#cabec {
     padding-left: 4em;
     padding-right: 4em;
-    background-color: #2d1c58;
+    background-color: #342c7c;
     border-top: 1px solid #2FF6BF;
     border-right: 1px solid #2FF6BF;
     border-bottom: 1px solid #2FF6BF;
     border-left: 1px solid #2FF6BF;
 }
 
-div.container {
+div.container-fluid {
     padding: 4em;
 }
 
 div.card-header {
-    background-color: #2d1c58;
+    background-color: #342c7c;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
@@ -28,7 +28,7 @@ div.card-header {
 }
 
 div.card-body {
-    background-color: #2d1c58;
+    background-color: #342c7c;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
@@ -37,7 +37,7 @@ div.card-body {
 
 table.table {
     color: #fff;
-    background-color: #2d1c58;
+    background-color: #342c7c;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;

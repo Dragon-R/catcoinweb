@@ -32,5 +32,6 @@ if (!isset($_SESSION['usuario'])) {
                 <a class="nav-item nav-link" href="<?php echo $url; ?>" target="_blank">Ver sitio web</a>
             </div>
         </nav>
-        <div id="texto" class="container">
+        <br>
+        <div id="texto" class="container-fluid">
             <div class="row">

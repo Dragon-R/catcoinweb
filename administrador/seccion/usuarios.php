@@ -1,6 +1,5 @@
-<?php include("../template/cabecera.php"); ?>
 <?php 
-include("../config/bd.php");
+include("../../models/bd.php");
 
 $txtId_usuario=(isset($_POST['txtId_usuario']))?$_POST['txtId_usuario']:"";
 $txtAlias=(isset($_POST['txtAlias']))?$_POST['txtAlias']:"";
@@ -79,6 +78,8 @@ $sentenciaSQL->execute();
 $listaUsuarios=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
+
+<?php include("../template/cabecera.php"); ?>
 
                 <div class="col col-3">
                     <div class="card">

@@ -15,7 +15,7 @@ if (!isset($_SESSION['txtCorreo'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatCoin</title>
+    <title>CatCoin - Usuarios</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/comic-sans-ms.ttf"  type="text/css">
@@ -36,14 +36,12 @@ if (!isset($_SESSION['txtCorreo'])) {
                     <a id="nosotros" class="nav-link" href="nosotros.php">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
-                    <a id="registro" class="nav-link" href="registro.php">REGISTRO</a>
+                    <a id="registro" class="nav-link" href="usuario.php">USUARIO</a>
                 </li>
                 <li class="nav-item">
-                    <a id="sesion" class="nav-link" href="sesion.php">INICIAR SESIÓN</a>
+                    <a id="sesion" class="nav-link" href="../../models/cerraruser.php">CERRAR SESIÓN</a>
                 </li>
-                <li class="nav-item">
-                    <!-- <a class="nav-item nav-link" href="<?php echo $url;?>cerrar.php">Cerrar <?php echo $txtCorreo; ?></a> -->
-                </li>
+                <!-- <a class="nav-item nav-link" href="<?php /* echo $url; */?>cerrar.php">Cerrar <?php /* echo $txtCorreo; */ ?></a> -->
             </ul>
         </nav>
     </div>

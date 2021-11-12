@@ -15,7 +15,7 @@
                 </div>
                 <div id="sesion_contrasena" class="row align-items-center">
                     <div class="col-4">
-                        <input type="password" id="password" class="form-control" name="txtContrasena" id="txtContrasena" value="" aria-describedby="passwordHelpInline" placeholder="Contraseña" minlength="8" maxlength="16" required>
+                        <input type="password" class="form-control" id="txtContrasena" name="txtContrasena" value="" aria-describedby="passwordHelpInline" placeholder="Contraseña" minlength="8" maxlength="16" required>
                     </div>
                 </div>
                 <div id="btn_jugar" class="col">

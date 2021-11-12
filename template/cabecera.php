@@ -1,14 +1,3 @@
-<?php 
-/* session_start();
-if (!isset($_SESSION['txtCorreo'])) {
-    header("Location:../index.php");
-}else{
-    if($_SESSION['txtCorreo']=="ok") {
-        $userName=$_SESSION["txtCorreo"];
-    }
-} */
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -40,9 +29,6 @@ if (!isset($_SESSION['txtCorreo'])) {
                 </li>
                 <li class="nav-item">
                     <a id="sesion" class="nav-link" href="sesion.php">INICIAR SESIÓN</a>
-                </li>
-                <li class="nav-item">
-                    <!-- <a class="nav-item nav-link" href="<?php echo $url;?>cerrar.php">Cerrar <?php echo $txtCorreo; ?></a> -->
                 </li>
             </ul>
         </nav>

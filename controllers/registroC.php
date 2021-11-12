@@ -25,14 +25,14 @@
         $sentenciaSQL->bindParam(':ciudad',$txtCiudad);
 
         $sentenciaSQL->execute();
-        header("Location:index.php");
+        header("Location:usuarios/index.php");
     }
 
-/*     session_start();
+    /* session_start();
     if ($_POST) {
-        if (($_POST['user']==$txtAlias) && ($_POST['contrasena']==$txtContrasena)) {
-            $_SESSION['user']="ok";
-            $_SESSION['userName']=$txtAlias;
+        if (($_POST['txtCorreo']==$txtCorreo) && ($_POST['contrasena']==$txtContrasena)) {
+            $_SESSION['txtCorreo']="ok";
+            $_SESSION['txtCorreo']=$txtCorreo;
             header('Location:index.php');
         }else{
             $mensaje="Error: El usuario o contraseña son incorrectos";
